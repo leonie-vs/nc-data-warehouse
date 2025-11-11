@@ -1,1 +1,3 @@
 Instructions for today's sprint can be found at: [https://l2c.northcoders.com/courses/data-toolkit/data-warehousing](https://l2c.northcoders.com/courses/de-ng/data-warehousing)
+
+The bash script in run-all.sh runs star-schema.sql and  saves the outputs to a file called star-schema-output.txt. In order to make run-all.sh executable, run <chmod +x run-all.sh> once. Then, use the command <./run-all> from the root directory to execute the SQL queries.
