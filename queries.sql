@@ -34,7 +34,15 @@ SELECT
     ROUND(CAST(SUM(revenue)AS numeric),2) AS total_revenue
 FROM fact_staff
 JOIN dim_date ON dim_date.date_id = fact_staff.date_id
-GROUP BY quarter
-ORDER BY quarter
+WHERE EXTRACT(QUARTER FROM dim_date.next_cohort_date) = 1
+GROUP BY quarter;
+
+-- Task 5: Which course brings the most revenue?
+SELECT
+    dim_course.course, SUM(fact_staff.revenue) AS course_revenue
+FROM fact_staff
+JOIN dim_course ON dim_course.course_id = fact_staff.course_id
+GROUP BY dim_course.course
+ORDER BY course_revenue DESC
 LIMIT 1;
 
