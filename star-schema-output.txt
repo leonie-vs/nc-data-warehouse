@@ -29,3 +29,31 @@ INSERT 0 3
        3 | Remote
 (3 rows)
 
+DROP TABLE
+CREATE TABLE
+INSERT 0 21
+ staff_id | first_name |   last_name    
+----------+------------+----------------
+        1 | Verity     | Gregory
+        2 | Pippa      | Austin
+        3 | August     | Aldred
+        4 | Katherine  | Hurst
+        5 | Emily      | Bennett
+        6 | Paul       | Copley
+        7 | Paul       | Rogerson
+        8 | Bela       | Bertalan
+        9 | Kyle       | McPhail
+       10 | Chon       | Lee
+       11 | Mezz       | Davies
+       12 | David      | Bartlett
+       13 | Lee        | Kirkham
+       14 | Danika     | Crawley
+       15 | John       | Hutcheon
+       16 | Stephen    | Corke
+       17 | Alex       | Swain
+       18 | Simon      | Jackson
+       19 | Hev        | Magnier-Ashton
+       20 | Jodie      | Cheung
+       21 | Eli        | Wiggins
+(21 rows)
+
