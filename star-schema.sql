@@ -51,3 +51,20 @@ SELECT DISTINCT first_name, last_name
 FROM staff;
 
 SELECT * FROM dim_name;
+
+
+-- course dimension table
+DROP TABLE IF EXISTS dim_course;
+
+CREATE TABLE dim_course
+(
+    course_id SERIAL PRIMARY KEY,
+    course VARCHAR(100)
+);
+
+INSERT INTO dim_course (course)
+SELECT DISTINCT course
+FROM staff;
+
+SELECT * FROM dim_course;
+

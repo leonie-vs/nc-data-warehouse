@@ -57,3 +57,13 @@ INSERT 0 21
        21 | Eli        | Wiggins
 (21 rows)
 
+DROP TABLE
+CREATE TABLE
+INSERT 0 3
+ course_id |  course  
+-----------+----------
+         1 | Cloud
+         2 | Data
+         3 | Software
+(3 rows)
+
