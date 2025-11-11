@@ -43,11 +43,12 @@ CREATE TABLE dim_name
 (
     staff_id SERIAL PRIMARY KEY,
     first_name VARCHAR(100),
-    last_name VARCHAR(100)
+    last_name VARCHAR(100),
+    full_name VARCHAR(100)
 );
 
-INSERT INTO dim_name (first_name, last_name)
-SELECT DISTINCT first_name, last_name
+INSERT INTO dim_name (first_name, last_name, full_name)
+SELECT DISTINCT first_name, last_name, first_name || ' ' || last_name
 FROM staff;
 
 SELECT * FROM dim_name;
@@ -103,7 +104,8 @@ FROM staff
 JOIN dim_name empl ON staff.first_name = empl.first_name AND staff.last_name = empl.last_name
 JOIN dim_area ON staff.area = dim_area.area
 JOIN dim_course ON staff.course = dim_course.course
-JOIN dim_name manager ON staff.manager = manager.first_name || ' ' || manager.last_name
+LEFT JOIN dim_name manager ON staff.manager = manager.full_name
 JOIN dim_date ON TO_DATE(staff.next_cohort_date, 'DD Month YYYY') = dim_date.next_cohort_date;
 
 SELECT * FROM fact_staff;
+
