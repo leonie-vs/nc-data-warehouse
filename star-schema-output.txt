@@ -19,3 +19,13 @@ INSERT 0 13
       13 | 2024-11-03
 (13 rows)
 
+DROP TABLE
+CREATE TABLE
+INSERT 0 3
+ area_id |    area    
+---------+------------
+       1 | Leeds
+       2 | Manchester
+       3 | Remote
+(3 rows)
+
