@@ -9,3 +9,8 @@ You are now connected to database "ncstaffsql" as user "leonievs".
  David Bartlett |             19
 (1 row)
 
+ quarter | total_mentees 
+---------+---------------
+       1 |            83
+(1 row)
+
