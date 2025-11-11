@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-psql -f run-queries.sql > queries-output.txt
+psql -f queries.sql > queries-output.txt
