@@ -4,3 +4,8 @@ You are now connected to database "ncstaffsql" as user "leonievs".
  Alex Swain
 (1 row)
 
+   full_name    | cohorts_worked 
+----------------+----------------
+ David Bartlett |             19
+(1 row)
+
